@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Plantilla de Página Web</title>
+    <title>Tuvsa</title>
     <style>
       /* Estilos CSS */
       body {
@@ -124,17 +124,17 @@ h1, h2, h3 {
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
       <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="index.php">Inicio</a>
+        <a class="nav-link active" aria-current="page" href="index.php" onClick={scrollToSection0()}>Inicio</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="somos/quines_somos.app">Quines somos</a>
+        <a class="nav-link" onClick={scrollToSection1()} >Servicios</a>
       </li>
+     
       <li class="nav-item">
-        <a class="nav-link" href="galeria/loque_sea.app">Galeria</a>
+        <a class="nav-link" onClick={scrollToSection2()}>Contacto</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link disabled">Login</a>
-      </li>
+     
+      
     </ul>
     
   </div>
@@ -178,35 +178,27 @@ h1, h2, h3 {
 
 
       <section>
-        <img src="https://picsum.photos/200" alt="Imagen aleatoria" />
-        <h2>Sección 1</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fringilla semper eros ac convallis.</p>
+      <img src="/img/LOGO_TUVSA_B.svg"  alt="Imagen aleatoria" />
+
+        <h2>Transporte siempre disponible</h2>
+        <p>Nuestras unidades siempre disponibles para su buen uso, pues procuramos hacer un servicio mecanico cada semana.</p>
       </section>
       <section>
-        <img src="https://picsum.photos/200" alt="Imagen aleatoria" />
-        <h2>Sección 2</h2>
-        <p>Aliquam erat volutpat. Mauris auctor tortor ut urna blandit, eget molestie velit facilisis.</p>
+        <img src="/img/1.jpg" alt="Imagen aleatoria" width="500" height="300" />
+        <h2>Unidades limpias</h2>
+        <p>  La ruta garantiza que nuestros vehículos estén siempre en excelentes condiciones de limpieza y mantenimiento.</p>
       </section>
       <section>
-        <img src="https://picsum.photos/200" alt="Imagen aleatoria" />
-        <h2>Sección 3</h2>
-        <p>Curabitur mollis vestibulum metus, eu ultrices augue mattis nec. Sed ut felis nec quam finibus malesuada.</p>
+        <img src="/img/2.jpg" alt="Imagen aleatoria" width="500" height="300" />
+        <h2>Seguro de pasajeros</h2>
+        <p>También contamos con seguros de pasajeros que brindan tranquilidad y seguridad a nuestros pasajeros durante sus viajes.</p>
       </section>
       <section>
-        <img src="https://picsum.photos/200" alt="Imagen aleatoria" />
-        <h2>Sección 4</h2>
-        <p>Vestibulum dignissim augue sed tristique dignissim. Sed nec enim aliquet, auctor odio ut, euismod quam.</p>
+        <img src="/img/LOGO_TUVSA_B.svg" alt="Imagen aleatoria" />
+        <h2>Choferes certificados</h2>
+        <p>os enorgullece contar con conductores certificados y altamente capacitados para brindar el mejor servicio posible a nuestros pasajeros.</p>
       </section>
-      <section>
-        <img src="https://picsum.photos/200" alt="Imagen aleatoria" />
-        <h2>Sección 5</h2>
-        <p>Nullam ut ligula vel libero semper fringilla. Etiam sit amet elit quis felis volutpat mollis vel ac ipsum.</p>
-</section>
-<section>
-<img src="https://picsum.photos/200" alt="Imagen aleatoria" />
-<h2>Sección 6</h2>
-<p>Nam sed rhoncus turpis. Sed fringilla ultricies nisl, ac cursus dolor venenatis a.</p>
-</section>
+ 
 </main>
 <footer>
 
@@ -220,6 +212,34 @@ include "assets/inc/footer.inc";
 </footer>
 
   </body>
+
+  <script>
+    const  scrollToSection0  = () => {
+  if(typeof window!='undefined'){window.scrollTo({
+    top: 500,
+    behavior:"smooth"
+  })}
+  
+}
+  </script>
+    <script>
+    const  scrollToSection1  = () => {
+  if(typeof window!='undefined'){window.scrollTo({
+    top: 850,
+    behavior:"smooth"
+  })}
+  
+}
+  </script>
+    <script>
+    const  scrollToSection2  = () => {
+  if(typeof window!='undefined'){window.scrollTo({
+    top: 3000,
+    behavior:"smooth"
+  })}
+  
+}
+  </script>
 </html>
 
 
